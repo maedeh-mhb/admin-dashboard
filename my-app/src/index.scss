@@ -1,0 +1,86 @@
+@import './assets//variables';
+
+
+* {
+  font-size: 62.5%;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   font-family: 'Open Sans', sans-serif;
+   background-color: rgb(244, 245, 246);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  };
+  
+  .dark {
+
+  .home-container {
+    background-color: black;
+  };
+  .nav-container {
+    background-color: black;
+  };
+  .side-container {
+    background-color: black;
+  };
+  .widget {
+    background-color: rgba(169, 163, 218, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    box-shadow: none
+  };
+  .input-container {
+    input {
+      background-color: black;
+    }
+};
+
+.side-container {
+  main {
+    a {
+      &:hover {
+        background-color: rgba(189, 184, 235, 0.3);
+        color: white;
+      }
+    }
+  }
+  .active{
+    background-color: rgba(189, 184, 235, 0.3);
+    color: white;
+};
+}
+.MuiDataGrid-cell  {
+  color: $text-color ;
+};
+
+.MuiTablePagination-root {
+  color: $text-color ;
+  
+};
+
+.Mui-selected {
+  background-color: rgba(189, 184, 235, 0.3) !important;
+  .MuiDataGrid-cell  {
+    color: white;
+   
+  };
+  
+};
+.MuiDataGrid-row {
+  &:hover {
+    background-color: rgba(189, 184, 235, 0.3) !important;
+  }
+};
+
+}

@@ -1,0 +1,47 @@
+@import '../../assets/variables';
+@import '../../assets/mixins';
+
+.widget {
+    background-color: $base-color;
+    border-radius: 10px;
+    color:white;
+    padding: 1.6rem;
+    box-shadow: 10px 10px 5px 0px rgba(83,87,138,0.75);
+    cursor: pointer;
+};
+
+.wid-total {
+    margin-bottom: 0.5rem;
+    
+    .total {
+        font-size: $font-200;
+        font-weight: bold;
+    }
+    display: flex;
+    align-items: baseline;
+    gap: 1rem
+};
+
+.wid-title{
+    font-size: $font-100;
+};
+.increase {
+    color:$error-color;
+    font-size: $font-200
+    
+};
+
+.decrease {
+    color:$success-color;
+    font-size: $font-200
+};
+
+.wid-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+        width: 8%;
+        height: 8%;
+    }
+}

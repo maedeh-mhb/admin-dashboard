@@ -1,0 +1,19 @@
+@import '../../assets/variables';
+
+.tableContainer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: -1px -1px 3px 3px rgba(167,166,166,0.26);
+    border-radius: 10px;
+    h1 {
+        font-size: $font-300 ;
+        color: $dark-text-color;
+    }
+}
+
+.table-grid-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+

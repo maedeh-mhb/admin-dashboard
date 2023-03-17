@@ -1,0 +1,37 @@
+@import '../../assets//variables';
+
+.button-container {
+    // width: 100%;
+    // display: flex;
+    // justify-content: space-around;
+    button {
+        border-radius: 5px;
+        color: white;
+        font-size: $font-100 !important;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+       
+    }
+};
+.primary {
+    button {
+        background-color: $base-color;
+        &:hover {
+            background-color: $trans-color;
+            color: $base-color
+        }
+    }
+};
+
+.secondary {
+    button {
+        color:$base-color;
+        background-color: white;
+        border: 1px solid $base-color;
+        &:hover {
+            background-color: $base-color;
+            color: white
+        }
+    }
+}

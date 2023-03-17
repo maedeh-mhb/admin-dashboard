@@ -1,0 +1,80 @@
+@import '../../assets/variables';
+
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 2.6rem;
+    padding: 1.5rem;
+    color: $text-color;
+    font-size: $font-400
+};
+.pie-chart{
+    width: 25%;
+    .CircularProgressbar-path {
+        stroke: $base-color !important;
+      }
+      .CircularProgressbar-text {
+        fill: $success-color !important;
+      }
+};
+
+.pie-footer {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    
+};
+
+.pie-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $font-300;
+    h1 {
+        color: $base-color;
+        font-size: $font-200;
+    }
+};
+
+.pie-footer {
+    width: 60%;
+}
+.pie-footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $font-200;
+    p {
+        margin-bottom: 10% !important;
+        margin-top: 0
+    }
+};
+
+.pie-increase {
+    color: $success-color;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+};
+.pie-decrease {
+    color: $error-color;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+};
+
+.recharts-legend-item {
+    font-size: $font-200;
+};;
+
+.recharts-tooltip-wrapper {
+    color: $text-color !important;
+    font-size: 4rem;
+   li{
+        font-size: 2rem;
+    }
+  }
+
+

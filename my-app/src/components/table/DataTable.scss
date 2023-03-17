@@ -1,0 +1,100 @@
+@import '../../assets/variables';
+
+
+.grid-pending {
+    .MuiDataGrid-cellContent {
+        color: $pending-color !important;
+    }
+};
+.grid-paid {
+    .MuiDataGrid-cellContent {
+        color: $success-color !important;
+    }
+};
+
+.grid-failed {
+    .MuiDataGrid-cellContent {
+        color: $error-color !important;
+    }
+};
+
+
+.Mui-selected {
+    background-color: $trans-color !important;
+};
+.MuiDataGrid-cell {
+    &:focus {
+        outline: none !important;
+    }
+};
+
+.MuiDataGrid-columnHeader {
+    font-size: 8rem;
+    font-weight: bold;
+    color: $base-color !important;
+};
+
+.MuiDataGrid-cell  {
+    color: $dark-text-color ;
+    font-size: 2rem;
+};
+
+.MuiDataGrid-columnHeader {
+    
+    &:focus {
+        outline: none !important;
+    }
+};
+ .Mui-checked {
+            color: $base-color !important;
+        };
+
+.MuiSwitch-track {
+    background-color: $base-color !important;
+}
+
+.MuiInput-root {
+    &::after {
+        border-bottom: 1px solid $base-color !important;
+    }
+};
+
+.MuiButtonBase-root {
+    color: $base-color !important;
+}
+
+.MuiTablePagination-root {
+    color: $dark-text-color !important;
+    font-size: $font-200 !important;
+};
+
+.action-container {
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    gap: 2rem;
+    span{
+        cursor: pointer;
+    }
+};
+
+.MuiDataGrid-selectedRowCount {
+    opacity: 0 !important;
+};
+
+
+// .data-table-container {
+//     padding-top: 8rem;
+//     font-size: $font-600;
+// };
+
+// .table-header-container {
+//     background-color: $trans-color !important;
+//     display: flex;
+//     span {
+//         padding: 1rem;
+//         border-left: $base-border;
+//         color: $base-color;
+//         font-weight: bold;
+//     }
+// }

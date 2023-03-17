@@ -1,0 +1,65 @@
+@import '../../assets/variables';
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1.6rem ;
+    background-color: white;
+    // border-bottom: $base-border;
+    font-size: $font-25;
+    color: $text-color;
+    position: fixed;
+    height: 5rem;
+    right: 0;
+    left: 15rem;
+    z-index: 13;
+};
+
+.nav-lan{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+};
+.nav-icons {
+    margin-right: 3rem;
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    font-size: $font-300;
+    svg {
+        width: 2rem;
+        height: 2rem;
+    };
+
+}
+
+
+.nav-icon {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+    }
+    .nav-icons {
+        display: none;
+    }
+};
+
+@media screen and (max-width:480px){
+    .nav-container {
+        left: 7rem;
+        height: 10%;
+    }
+
+}

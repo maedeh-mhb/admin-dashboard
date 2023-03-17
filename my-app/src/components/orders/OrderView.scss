@@ -1,0 +1,82 @@
+@import '../../assets/variables';
+
+.order-view-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    font-size: $font-500;
+    h1 {
+        font-size: $font-500;
+        color: $error-color;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        cursor: pointer;
+       padding-left: 1rem;
+       h2 {
+        font-size: $font-500 !important;
+       }
+
+       
+    }
+
+};
+
+.order-view-items {
+    padding: 1.2rem;
+    p {
+        color: $text-color;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+};
+.order-view-item {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.3rem;
+    .MuiInputBase-input {
+        padding: 0 !important;
+        font-size: $font-50 !important;
+    }
+    span {
+        font-size: $font-25;
+        color: $text-color;
+        width: 30% ;
+        margin-left: 1rem;
+    };
+
+}
+.paid {
+    color: $success-color !important;
+};
+
+.pending {
+    color: $pending-color !important;
+};
+
+.failed {
+    color: $error-color !important;
+};
+
+.order-icon {
+    cursor: pointer;
+    width: 5% !important
+   
+};
+
+.modal-header{ 
+    font-size: $font-100 !important;
+    color: $base-color !important;
+};
+
+.buttons-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+

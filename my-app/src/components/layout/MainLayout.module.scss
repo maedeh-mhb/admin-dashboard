@@ -1,0 +1,18 @@
+.main-container {
+    display: flex;
+}
+.inner-container {
+    flex:5;
+    position: absolute;
+    left: 15rem;
+    right: 0;
+    
+};
+
+ @media screen and (max-width:480px){
+     .inner-container {
+         left: 7rem !important;
+     }
+
+ };
+

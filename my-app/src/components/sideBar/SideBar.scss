@@ -1,0 +1,111 @@
+@import '../../assets/variables';
+
+.side-container {
+    flex:1;
+    background-color: white;
+    border-right: $base-border;
+    height: 100vh;
+    color: $text-color;
+    position: fixed;
+    width: 15rem;
+    z-index: 14;
+    main{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        a {
+            display: flex;
+            align-items: center;
+            margin-left: 1.5rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: $base-color;
+            
+            &:hover {
+                background-color: $trans-color;
+            }
+            span {
+                font-size: $font-50;
+                margin-left: 0.5rem
+            }
+        }
+    };
+    p{
+        font-size: $font-25;
+        margin-left: 1.92rem;
+        font-weight: bold;
+        margin-top: 1.6rem
+    }
+
+};
+
+.side-title {
+    color: $base-color;
+    font-size: $font-200;
+    // border-bottom: $base-border;
+    padding: 1.6rem 0;
+    height: 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+};
+
+.side-icon {
+    color: $base-color;
+    font-size: $font-75;
+};
+
+.active{
+    background-color: #d0d2ee;
+};
+
+.theme-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+    span {
+        width: 20px;
+        height: 20px;
+        border: $base-border;
+        border-radius: 5px;
+        cursor: pointer;
+    };
+    :nth-child(1) {
+        background-color: white
+    };
+    :last-child {
+        background-color: black;
+    }
+};
+
+// @media screen and (max-width:1224px) {
+//     .side-title {
+//         padding: 1rem 0;
+//     };
+// }
+
+
+.side-mobile {
+    display: none;
+};
+
+@media screen and (max-width:480px) {
+    .side-mobile {
+        display: block;
+    };
+   .side-desktop {
+    display: none;
+   };
+   .side-container {
+    width: 7rem;
+   };
+   .side-title {
+   height: 10%;
+   font-size: $font-50;
+};
+}
