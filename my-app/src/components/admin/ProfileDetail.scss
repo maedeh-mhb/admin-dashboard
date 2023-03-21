@@ -1,0 +1,80 @@
+@import '../../assets/mixins';
+@import '../../assets/variables';
+
+.profile-detail-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    flex:2;
+    @include cus-box-shadow;
+    border-radius: 10px;
+    padding: 1rem;
+    h1 {
+        padding: 2rem 1rem 1rem 1rem;
+        
+        font-size: $font-50;
+        color: $text-color;
+        font-weight: bold;
+    };
+    input {
+        display: none;
+        cursor: pointer;
+
+    }
+};
+
+.avatar {
+    border: $base-border;
+    position: absolute;
+    overflow: hidden;
+    bottom: 75%;
+    left: calc((100% - 15rem)/2);
+        border-radius: 70%;
+        width:15rem;
+        height: 15rem;
+    cursor: pointer;
+};
+
+.profile-detail {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: $base-color;
+    font-weight: bolder;
+    font-size: $font-100;
+};
+.about {
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    a{
+        text-decoration: none !important
+    }
+};
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: $font-25;
+    color: $dark-text-color;
+    font-weight: bold
+    
+};
+
+.profile-box {
+    border-radius: 10px 10px 0 0 ;
+    position: absolute;
+    height: 80px;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: $base-color;
+
+};
+

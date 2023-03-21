@@ -1,0 +1,10 @@
+@import '../../assets/mixins';
+
+
+.profile-main-outer {
+    display: flex;
+    gap:5rem;
+    padding-top: 7rem;
+    margin: 10rem auto;
+    width: 85%;
+}

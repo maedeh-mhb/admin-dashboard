@@ -33,7 +33,7 @@ function OrderView(props) {
             <h2 className='modal-header'>{`${editMode ? 'Edit' : 'View'} Information`}</h2>
             <Tooltip title={<h1 style={{ fontSize: "1rem " }}>Order Code</h1>}>
              <h1>
-                <span><p className='order-view-item'>{edit === 'product' ? <SimpleInput value={product}/> : product}{`(${id})`}</p></span>
+                <span><p className='order-view-item'>{edit === 'product' ? <SimpleInput value={product} variant="standard"/> : product}{`(${id})`}</p></span>
                 <span className="order-icon" id="product" onClick={editHandler}><BorderColorIcon/></span>
             </h1>
             </Tooltip>
@@ -45,13 +45,13 @@ function OrderView(props) {
             </div>
             <div className='order-view-items'>
                 <p>Payment Info.</p>
-                <div className='order-view-item'>Payment status : <span className={`${status}`}>{edit === 'status' ? <SimpleInput value={status}/> : status}</span>
+                <div className='order-view-item'>Payment status : <span className={`${status}`}>{edit === 'status' ? <SimpleInput value={status} variant="standard"/> : status}</span>
                 <span id ="status" className="order-icon" onClick={editHandler}><BorderColorIcon/></span>
                 </div>
-                <div className='order-view-item'>Total Price : <span>{edit === 'total' ? <SimpleInput value={total}/> : total}</span>
+                <div className='order-view-item'>Total Price : <span>{edit === 'total' ? <SimpleInput value={total} variant="standard"/> : total}</span>
                 <span className="order-icon" id ="total" onClick={editHandler}><BorderColorIcon/></span>
                 </div>
-                <div className='order-view-item'>Paid:<span>{edit === 'paid' ? <SimpleInput value={paid}/> : paid}</span> 
+                <div className='order-view-item'>Paid:<span>{edit === 'paid' ? <SimpleInput value={paid} variant="standard"/> : paid}</span> 
                 <span className="order-icon" id ="paid" onClick={editHandler}><BorderColorIcon/></span>
                 </div>
             </div> 

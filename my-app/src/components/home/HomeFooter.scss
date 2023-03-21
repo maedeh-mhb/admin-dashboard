@@ -1,19 +1,30 @@
 @import '../../assets/variables';
+@import '../../assets/mixins';
 
 .tableContainer {
-    width: 85%;
+     width: 40%;
+    flex:3;
     margin: 0 auto;
-    padding: 2rem;
-    box-shadow: -1px -1px 3px 3px rgba(167,166,166,0.26);
+    padding: 1rem;
+    @include cus-box-shadow;
     border-radius: 10px;
     h1 {
-        font-size: $font-300 ;
-        color: $dark-text-color;
+        font-size: $font-100 ;
+        color: $base-color;
     }
 }
 
 .table-grid-Container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-}
+};
+
+
+
+@media screen and (max-width:780px){
+    .tableContainer {
+        flex:1;
+    }
+
+};
 

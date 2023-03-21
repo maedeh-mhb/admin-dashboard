@@ -21,7 +21,7 @@ function Navigation(props) {
                 <Route path='/sales' element={<Sales/>} />
                 <Route path='/posts' element={<Posts/>} />
                 <Route path='/' element={<HomePage/>} />
-                <Route path='/profile' element={<Profile/>} />
+                <Route path='/profile/:id' element={<Profile/>} />
                 <Route path='/notifications' element={<Notifications/>} />
                 <Route path='/stats' element={<Stats/>} />
                 <Route path='/orders' element={<Orders/>} />

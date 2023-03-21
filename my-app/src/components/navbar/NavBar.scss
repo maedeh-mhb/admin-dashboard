@@ -1,15 +1,16 @@
 @import '../../assets/variables';
+@import '../../assets/mixins';
 
 .nav-container {
-    display: flex;
-    align-items: center;
-    padding-left: 1.6rem ;
-    background-color: white;
+   
+    padding: 2rem ;
+    padding-top: 1rem !important;
+    background-color: transparent;
     // border-bottom: $base-border;
     font-size: $font-25;
     color: $text-color;
     position: fixed;
-    height: 5rem;
+     height: 7rem;
     right: 0;
     left: 15rem;
     z-index: 13;
@@ -39,6 +40,16 @@
 
 .nav-icon {
     cursor: pointer;
+    @include cus-box-shadow;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    .MuiBadge-badge {
+        top:1px;
+        right: 4px;
+    }
 }
 
 .nav-menu {
@@ -62,4 +73,8 @@
         height: 10%;
     }
 
+};
+
+.active-nav {
+    background-color: white ;
 }

@@ -1,13 +1,16 @@
 @import '../../assets/variables';
+@import '../../assets/mixins';
 
 .input-container {
     display: flex;
+    background-color: white;
+    @include cus-box-shadow;
     width: 20%;
     padding: 0.78rem;
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
-    border: $base-border;
+    
     svg {
         width: 2rem;
         height: 2rem;
@@ -44,9 +47,19 @@
 
 .MuiInputBase-root {
     font-size: $font-100;
-  
+    width: 100%;
     input {
         font-size: $font-100;
         color: $base-color;
-    }
+    };
+
+
+};
+
+
+
+.error {
+    font-size: $font-50;
+    margin: 1rem;
+    color: red
 }

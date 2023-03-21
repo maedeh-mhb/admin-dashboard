@@ -6,9 +6,9 @@ import HomeFooter from '../../components/home/HomeFooter';
 function HomePage(props) {
     return (
         <div className='home-container'>
+            
             <HomeHeader/>
             <HomeContent/>
-            <HomeFooter/>
         </div>
     );
 }

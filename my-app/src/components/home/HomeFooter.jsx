@@ -10,7 +10,7 @@ function HomeFooter(props) {
     const [isOpen,setOpen] = useState(false);
     const [isDeleteOpen,setDeleteOpen] = useState(false);
     const [data,setData] = useState({});
-console.log(data)
+
 
     const tableProps = {
         isOpen,

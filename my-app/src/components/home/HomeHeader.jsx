@@ -34,11 +34,14 @@ function HomeHeader(props) {
     ];
 
     return (
+        <>
         <div className='home-header'>
+             
            {
             widgData.map((data)=><Widget {...data} key={data.id}/>)
            }
         </div>
+        </>
     );
 }
 

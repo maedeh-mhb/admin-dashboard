@@ -62,7 +62,7 @@ const columns = [
     ];
 
     return (
-      <div style={{ height: 400, width: '100%', margin:'3rem auto' }}>
+      <div style={{ height: 380, width: '100%', padding :'3rem 2rem 1rem 2rem' }}>
       <DataGrid
         rows={rows}
         columns={columns.concat(actionColumns)}

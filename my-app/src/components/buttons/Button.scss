@@ -18,7 +18,7 @@
     button {
         background-color: $base-color;
         &:hover {
-            background-color: $trans-color;
+            background-color: $primary-hover-color;
             color: $base-color
         }
     }
@@ -31,6 +31,16 @@
         border: 1px solid $base-color;
         &:hover {
             background-color: $base-color;
+            color: white
+        }
+    }
+};
+
+.google{
+    button {
+        background-color: $google-color;
+        &:hover {
+            background-color: $google-dark-color;
             color: white
         }
     }

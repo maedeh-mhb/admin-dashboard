@@ -82,19 +82,33 @@
     opacity: 0 !important;
 };
 
+.MuiDataGrid-main  {
+    ::-webkit-scrollbar { background: none; };
+    ::-webkit-scrollbar-thumb {  background: $trans-color;
+    border-radius: 15px;
+    };
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      };
+      ::-webkit-scrollbar-corner {
+        display: none
+      }
+      
+};
 
-// .data-table-container {
-//     padding-top: 8rem;
-//     font-size: $font-600;
-// };
+.MuiDataGrid-footerContainer {
+    ::-webkit-scrollbar { background: none; };
+    ::-webkit-scrollbar-thumb {  background: $text-color;
+    border-radius: 15px;
+    };
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      };
+      ::-webkit-scrollbar-corner {
+        display: none
+      }
+      
+}
 
-// .table-header-container {
-//     background-color: $trans-color !important;
-//     display: flex;
-//     span {
-//         padding: 1rem;
-//         border-left: $base-border;
-//         color: $base-color;
-//         font-weight: bold;
-//     }
-// }

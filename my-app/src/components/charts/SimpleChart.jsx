@@ -79,7 +79,7 @@ const data = [
 function SimpleChart(props) {
     
     return (
-        <ResponsiveContainer aspect={1.7} >
+        <ResponsiveContainer aspect={2} >
         <LineChart
         width={200}
         height={200}

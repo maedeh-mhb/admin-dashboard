@@ -1,0 +1,64 @@
+@import '../../assets/variables';
+
+.login-form {
+    padding: 2rem;
+    margin: 1rem auto;
+    width: 40%;
+};
+.formControl {
+    width: 100%;
+    margin-bottom: 2rem
+};
+.MuiFormControl-root {
+    width: 100%;
+};
+
+.login-footer {
+   .button-container{
+    width: 100% !important;
+   };
+   button {
+    width: 100% !important;
+   }
+    width:100%;
+    gap:1rem;
+    margin-top: 1rem;
+    
+};
+
+.MuiFormLabel-root {
+    width: 100%;
+    font-size: $font-50 !important;
+};
+
+.secondary {
+    button {
+        background-color: transparent !important;     
+        &:hover {
+            background-color: $base-color !important;
+            color: white
+        }
+    }
+};
+
+.inner-text {
+    margin: 2rem auto;
+    width: 100%;
+    font-size: $font-50;
+    text-align: center;
+    color: $base-color
+};
+.member {
+    cursor: pointer;
+   
+};
+.remember {
+    align-items: center;
+    span {
+        font-size: $font-25;
+        color: $base-color;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}

@@ -3,7 +3,7 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Badge from '@mui/material/Badge';
 import Tooltip from '@mui/material/Tooltip';
-import { useContext } from 'react';
+import { useContext, useState,useEffect } from 'react';
 import { DarkModeContext } from '../../context/themeContext/darkModeContext';
 import HamburgerMenu from '../../menu/HamburgerMenu';
 import AdminInfo from '../admin/AdminInfo';
@@ -14,9 +14,26 @@ import './NavBar.scss';
 
 function Navbar(props) {
     const {isDark,setDark} = useContext(DarkModeContext);
+    const [navBar,setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        if (window.scrollY >= 70) {
+          setNavbar(true)
+        } else {
+          setNavbar(false)
+        }
+      };
+
+      useEffect(() => {
+        changeBackground()
+        // adding the event when scroll change background
+        window.addEventListener("scroll", changeBackground)
+    })
+    
 
     return (
-        <div className={'nav-container'}>
+        <div className={`nav-container ${navBar && 'active-nav'}`}>
+            <div style={{ margin: '0.1rem auto',width: '85%', display: 'flex', alignItems: 'center'}}>
             <SearchInput
             placeholder="Search..."/>
             <div className={'nav-icons'}>
@@ -40,8 +57,8 @@ function Navbar(props) {
                     </Badge>
                 </span>
                 </Tooltip>
-                <Tooltip title="profile">
-                <span className={'nav-icon'}>
+                <Tooltip title="Maedeh">
+                <span >
                    <AdminInfo/>
                 </span>
                 </Tooltip>
@@ -49,6 +66,8 @@ function Navbar(props) {
             <div className='nav-menu'>
                 <HamburgerMenu/>
             </div>
+            </div>
+          
         </div>
     );
 }
